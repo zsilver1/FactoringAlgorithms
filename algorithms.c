@@ -16,3 +16,18 @@ bigint gcd(bigint a, bigint b) {
     }
     return b;
 }
+
+bigint trial_division(bigint n) {
+    bigint limit = floor(sqrt(n));
+    for (bigint i = 2; i <= limit; i++) {
+        if (n % i == 0) {
+            return i;
+        }
+    }
+    return 1;
+}
+
+
+bigint quadratic_sieve(bigint n) {
+    
+}

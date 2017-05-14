@@ -8,7 +8,7 @@ factor: main.o algorithms.o
 	$(CC) main.o algorithms.o -o factor && rm -r *.o
 
 test: tests.o algorithms.o
-	$(CC) tests.o algorithms.o -o test && rm -r *.o && ./test
+	$(CC) tests.o algorithms.o -o test && rm -r *.o
 
 main.o: main.c algorithms.h
 	$(CC) $(CFLAGS) main.c
