@@ -7,8 +7,8 @@ void trial_division_test();
 void pollard_rho_test();
 
 int main() {
-    // gcd_test();
-    // trial_division_test();
+    gcd_test();
+    trial_division_test();
     pollard_rho_test();
     printf("All tests passed!\n");
     return 0;
